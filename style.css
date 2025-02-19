@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* width: 60vh; */
+  padding-top: 50px;
+  background-color: darkgray;
+  padding: 50px 30px;
+}
+
+.container .appName {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.numbers label {
+  font-size: 18px;
+}
+
+.numbers input {
+  font-size: 20px;
+  padding: 3px 5px;
+}
+
+.paper {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper #listNumber {
+  color: red;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 18px;
+}
+
+.result input {
+  font-size: 18px;
+  width: 100%;
+  height: 60px;
+  padding: 0 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#btn {
+  padding: 15px 35px;
+}

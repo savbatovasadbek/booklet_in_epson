@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="appName">Kitobcha</h1>
+
+      <div class="numbers">
+        <label for="firstNumber">
+          Birinchi betni kiriting:
+          <input type="number" id="firstNumber" name="firstNumber" min="1" />
+        </label>
+        <label for="secondNumber">
+          Oxirgi betni kiriting:
+          <input type="number" id="secondNumber" name="secondNumber" min="1" />
+        </label>
+      </div>
+
+      <div class="btn">
+        <button id="btn">Yaratish</button>
+      </div>
+
+      <div id="resultPages">
+        <div class="paper">
+          <h3 id="listNumber">__</h3>
+          <h3>ta list qo'ying.</h3>
+        </div>
+
+        <div class="result">
+          <label for="back">
+            Orqa tomoni: <br />
+            <input type="text" id="back" name="back" />
+          </label>
+          <label for="front">
+            Old tomoni: <br />
+            <input type="text" id="front" name="front" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
