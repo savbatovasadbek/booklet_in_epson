@@ -4,27 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Kitobcha Printer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="appName">Kitobcha</h1>
+      
+      <div class="mode-switcher">
+        <button id="modeKitobcha" class="mode-btn active">Kitobcha</button>
+        <button id="modeOldOrqa" class="mode-btn">Old-Orqa</button>
+      </div>
 
-      <div class="numbers">
-        <label for="firstNumber">
-          Birinchi betni kiriting:
-          <input type="number" id="firstNumber" name="firstNumber" min="1" />
-        </label>
-        <label for="secondNumber">
-          Oxirgi betni kiriting:
-          <input type="number" id="secondNumber" name="secondNumber" min="1" />
-        </label>
+      <div class="window-wrapper" id="windowWrapper">
+        
+        <div class="window">
+          <h1 class="appName">Kitobcha Rejimi</h1>
+          <div class="numbers">
+            <label>
+              Birinchi betni kiriting:
+              <input type="number" id="firstNumber" value="1" min="1" />
+            </label>
+            <label>
+              Oxirgi betni kiriting:
+              <input type="number" id="secondNumber" value="8" min="1" />
+            </label>
+          </div>
+        </div>
+
+        <div class="window">
+          <h1 class="appName">Old-Orqa Rejimi</h1>
+          <div class="numbers">
+            <label>
+              Birinchi betni kiriting:
+              <input type="number" id="firstNumberTwo" value="1" min="1" />
+            </label>
+            <label>
+              Oxirgi betni kiriting:
+              <input type="number" id="secondNumberTwo" value="7" min="1" />
+            </label>
+          </div>
+        </div>
+
       </div>
 
       <div class="btn">
-        <button id="btn">Yaratish</button>
+        <button id="btn" class="main-action-btn">Yaratish</button>
       </div>
 
       <div id="resultPages">
@@ -34,16 +58,23 @@
         </div>
 
         <div class="result">
-          <label for="back">
-            Orqa tomoni: <br />
-            <input type="text" id="back" name="back" />
+          <label>
+            Orqa tomoni:
+            <div class="input-group">
+              <input type="text" id="back" readonly placeholder="..." />
+              <button class="copy-btn" id="copyBack">Nusxalash</button>
+            </div>
           </label>
-          <label for="front">
-            Old tomoni: <br />
-            <input type="text" id="front" name="front" />
+          <label>
+            Old tomoni:
+            <div class="input-group">
+              <input type="text" id="front" readonly placeholder="..." />
+              <button class="copy-btn" id="copyFront">Nusxalash</button>
+            </div>
           </label>
         </div>
       </div>
+
     </div>
 
     <script src="script.js"></script>
